@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcel Kamiński Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Marcel Kamiński</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications & Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies & Interests</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <header id="home" class="vh-100 d-flex align-items-center">
+    <div class="container text-center">
+      <img src="images/profile.jpg" alt="Marcel Kamiński" class="img-fluid rounded-circle mb-4">
+      <h1>Marcel Kamiński</h1>
+      <p class="lead">Empowering businesses with cutting-edge technologies to create impactful solutions that inspire global change. <br>Leveraging <b>Python</b> and <b>JavaScript</b> to drive innovation and deliver exceptional results.</p>
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Me</h2>
+      <p class="text-center">As a driven software developer, my goal is to harness cutting-edge technologies to create impactful solutions that inspire global change. I am committed to innovation, professional growth, and contributing significantly to the industry.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Programming Languages</h4>
+          <ul class="list-group">
+            <li class="list-group-item">Python</li>
+            <li class="list-group-item">JavaScript</li>
+            <li class="list-group-item">HTML/CSS</li>
+            <li class="list-group-item">SQL</li>
+            <li class="list-group-item">Basic of Flutter and React</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4>Frameworks/Systems</h4>
+          <ul class="list-group">
+            <li class="list-group-item">Django</li>
+            <li class="list-group-item">Flask</li>
+            <li class="list-group-item">Selenium</li>
+            <li class="list-group-item">Vue</li>
+            <li class="list-group-item">and more...</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Experience</h2>
+      <div class="timeline">
+        <!-- Timeline item -->
+        <div class="timeline-item">
+          <h4>Python/Full-Stack Developer - UnitedHealth Group</h4>
+          <p>July 2022 - Present</p>
+          <p>Designs and creates software solutions in VUE, PostgreSQL, and Python, primarily using Flask. Conducted database operations, built end-to-end automation using Selenium and Cypress, and managed GitHub actions.</p>
+        </div>
+        <!-- Timeline item -->
+        <div class="timeline-item">
+          <h4>Python Developer - STXNEXT</h4>
+          <p>April 2021 - July 2022</p>
+          <p>Designing and creating software solutions in Python using Django, Flask, REST frameworks, ElasticSearch, and PostgreSQL. Involved in global database operations, unit test development, code reviews, and Docker configurations.</p>
+        </div>
+        <!-- More timeline items... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Education</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>University College Dublin</h4>
+          <p>Bachelor of Science in Computer Science, specializing in Data Science, Web Programming, and Python</p>
+        </div>
+        <div class="col-md-6">
+          <h4>Technical High School in Poland</h4>
+          <p>Comprehensive foundation in computer science and related technologies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Projects</h2>
+      <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card">
+              <img src="project1.jpg" class="card-img-top" alt="Project Image">
+              <div class="card-body">
+                <h5 class="card-title">MISP and AIAAIC pipeline</h5>
+                <p class="card-text">A system based on Malware Information Sharing Platform to process AI incidents.</p>
+              </div>
+            </div>
+          </div>
+          <!-- More carousel items... -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications & Research Section -->
+  <section id="publications" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Publications & Research</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Asynchronous Task Execution in Python Using Celery</h5>
+              <p class="card-text">Published in October 2021, this article introduces readers to Celery, a powerful distributed task queue system.</p>
+            </div>
+          </div>
+        </div>
+        <!-- More cards... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Certifications</h2>
+      <div class="accordion" id="certificationsAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              CISCO CNNA Certification
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#certificationsAccordion">
+            <div class="accordion-body">
+              Details about CISCO CNNA Certification...
+            </div>
+          </div>
+        </div>
+        <!-- More accordion items... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies & Interests Section -->
+  <section id="hobbies" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Hobbies & Interests</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Teaching</h5>
+              <p class="card-text">I love teaching and give extra lessons to students preparing for final exams in computer science.</p>
+            </div>
+          </div>
+        </div>
+        <!-- More cards... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact</h2>
+      <form>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Name" required>
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Email" required>
+          </div>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </div>
+      </form>
+      <div class="mt-4">
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/marcel-kami%C5%84ski-6b0761158/">Marcel Kamiński</a></p>
+        <p><strong>Phone/WhatsApp:</strong> +353 0830214586, +48 538 106 323</p>
+        <p><strong>Email:</strong> kontakt@marcelkaminski.pl</p>
+        <p><strong>Locations:</strong> Europe / Dublin, Ireland / Warsaw, Poland</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Testimonials</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <blockquote class="blockquote">
+              <p class="mb-0">Marcel is a highly skilled and dedicated developer, always eager to take on new challenges.</p>
+              <footer class="blockquote-footer">Client Name, <cite title="Source Title">Company</cite></footer>
+            </blockquote>
+          </div>
+          <!-- More carousel items... -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Blog</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Technology Trends in 2024</h5>
+              <p class="card-text">Latest trends in technology and how they are shaping the future.</p>
+            </div>
+          </div>
+        </div>
+        <!-- More cards... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Gallery</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <img src="gallery1.jpg" class="img-fluid" alt="Gallery Image">
+        </div>
+        <!-- More images... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
