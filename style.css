@@ -93,7 +93,7 @@ header p {
 }
 
 .carousel-item img {
-  width: 30%;
+  min-width: 20vh;
   height: auto;
 }
 
@@ -142,13 +142,13 @@ form .form-control {
   margin-top: 10px;
 }
 
-#testimonials .carousel-control-prev,
-#testimonials .carousel-control-next {
+ .carousel-control-prev,
+ .carousel-control-next {
   width: 5%;
 }
 
-#testimonials .carousel-control-prev-icon,
-#testimonials .carousel-control-next-icon {
+ .carousel-control-prev-icon,
+.carousel-control-next-icon {
   background-color: rgba(0, 0, 0, 0.5);
   /* Dark background for better visibility */
   border-radius: 50%;
