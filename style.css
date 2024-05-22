@@ -3,6 +3,9 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
+.active-rwd{
+  display: none;
+}
 
 header {
   background: url('images/background.jpg') no-repeat center center/cover;
@@ -28,6 +31,9 @@ section {
   header {
     text-align: center;
     padding: 2rem 0;
+  }
+  .active-rwd{
+    display: unset;
   }
 
   .text-justify {
@@ -89,7 +95,7 @@ header p {
 
 /* Projects section styles */
 #projectCarousel .card {
-  width: 30vw;
+  width: 30vh;
 }
 
 .carousel-item img {

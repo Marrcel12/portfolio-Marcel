@@ -245,46 +245,73 @@
         </div>
     </section>
 
+        <!-- WORKING IN PROGRESS :)  -->
+        <!-- TODO: RWD of projects -->
+        <!-- TODO: Multiple items on carusele -->
     <!-- Projects Section -->
-    <section id="projects" class="py-5">
+    <!-- <section id="projects" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Projects</h2>
             <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="card">
-                            <img src="images/misp-aiaaic.png" class="card-img-top" alt="Project Image">
+                            <img src="images/misp-aiaaic.png" class="card-img-top" alt="MISP and AIAAIC pipeline">
                             <div class="card-body">
                                 <h5 class="card-title">MISP and AIAAIC pipeline</h5>
-                                <p class="card-text">A system based on Malware Information Sharing Platform to process
-                                    AI incidents.</p>
+                                <p class="card-text">A system based on Malware Information Sharing Platform to process AI incidents.</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="card">
-                            <img src="images/misp-aiaaic.png" class="card-img-top" alt="Project Image">
+                            <img src="images/ai-formula-student.png" class="card-img-top" alt="AI Formula Student">
                             <div class="card-body">
-                                <h5 class="card-title">MISP and AIAAIC pipeline</h5>
-                                <p class="card-text">A system based on Malware Information Sharing Platform to process
-                                    AI incidents.</p>
+                                <h5 class="card-title">AI Formula Student</h5>
+                                <p class="card-text">Designed and developed software for an autonomous racing car for the AI Formula Student competition.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="images/recycle-it.png" class="card-img-top" alt="Recycle.it">
+                            <div class="card-body">
+                                <h5 class="card-title">Recycle.it</h5>
+                                <p class="card-text">Developed a smartphone-based solution to enhance recycling efficiency in Warsaw, awarded by the Orange Foundation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="images/ai-threat-intelligence.png" class="card-img-top" alt="Automating AI Threat Intelligence">
+                            <div class="card-body">
+                                <h5 class="card-title">Automating AI Threat Intelligence</h5>
+                                <p class="card-text">Research project focused on enhancing AI incident data sharing for cybersecurity, employing advanced data models and machine-readable formats.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="images/ai-data-models.png" class="card-img-top" alt="AI Data Models">
+                            <div class="card-body">
+                                <h5 class="card-title">AI Data Models for MISP</h5>
+                                <p class="card-text">Developed specialized data models for integrating AI incidents into the MISP platform, ensuring efficient categorization, serialization, and analysis.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel"
-                    data-bs-slide="prev">
+                <button class="carousel-control-prev active-rwd" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel"
-                    data-bs-slide="next">
+                <button class="carousel-control-next active-rwd" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
-    </section>
+    </section> -->
+    
 
     <!-- Publications & Research Section -->
     <section id="publications" class="py-5 bg-light">
@@ -537,22 +564,23 @@
         </div>
     </section>
 
-
     <!-- Contact Section -->
     <section id="contact" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Contact</h2>
-            <form>
-                <div class="row mb-3">
+            <form
+            action="https://formspree.io/f/xayrzozw"
+            method="POST"
+          >                <div class="row mb-3">
                     <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Name" required>
+                        <input type="text" class="form-control" placeholder="Name" required name="Name">
                     </div>
                     <div class="col-md-6">
-                        <input type="email" class="form-control" placeholder="Email" required>
+                        <input type="email" class="form-control" placeholder="Email" name ="email" required>
                     </div>
                 </div>
                 <div class="mb-3">
-                    <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                    <textarea class="form-control" rows="5" placeholder="Message" name="text" required></textarea>
                 </div>
                 <div class="d-grid">
                     <button type="submit" class="btn btn-primary">Send Message</button>
@@ -561,13 +589,13 @@
             <div class="mt-4">
                 <p><strong>LinkedIn:</strong> <a
                         href="https://www.linkedin.com/in/marcel-kami%C5%84ski-6b0761158/">Marcel Kamiński</a></p>
-                <p><strong>Phone/WhatsApp:</strong> +353 0830214586, +48 538 106 323</p>
                 <p><strong>Email:</strong> kontakt@marcelkaminski.pl</p>
                 <p><strong>Locations:</strong> Europe / Dublin, Ireland / Warsaw, Poland</p>
             </div>
         </div>
     </section>
 
+    <!-- TODO: add References -->
     <section id="testimonials" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-4">References</h2>
@@ -620,6 +648,7 @@
             </div>
         </div>
     </section>
+    <!-- TODO: make a Blog -->
     <!-- Blog Section -->
 
     <!-- <section id="blog" class="py-5">
