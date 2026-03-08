@@ -4,680 +4,906 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcel Kamiński Portfolio</title>
+    <title>Marcel Kamiński - Full-Stack Developer | AI Solutions</title>
+    <meta name="description" content="Full-Stack Developer with 6+ years of experience building AI-driven solutions for gaming, life sciences and healthcare. Python, JavaScript, Cloud.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Marcel Kamiński</a>
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">MK</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="#publications">Publications & Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications">Research</a></li>
                     <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies & Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#references">References</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">References</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li> -->
+                    <li class="nav-item ms-lg-2">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                            <i class="fa-solid fa-sun" id="themeIcon"></i>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <header id="home" class="vh-100 d-flex align-items-center">
-        <div class="container text-center">
-            <img src="images/profile.jpg" alt="Marcel Kamiński" class="img-fluid rounded-circle mb-4">
-            <h1>Marcel Kamiński</h1>
-            <p class="lead text-justify">Empowering businesses with cutting-edge technologies to create impactful
-                solutions that
-                inspire global change. <br>Leveraging <b>Python</b> and <b>JavaScript</b> to drive innovation and
-                deliver exceptional results.</p>
-        </div>
-    </header>
-
-    <!-- About Me Section -->
-    <section id="about" class="py-5">
+    <!-- Hero -->
+    <section id="hero">
         <div class="container">
-            <h2 class="text-center mb-4">About Me</h2>
-            <p class="">
-                Hello! I'm Marcel Kamiński, a passionate and driven software developer dedicated to leveraging
-                cutting-edge technologies to create impactful solutions. My career is marked by contributions to web
-                development, AI incident management, and cybersecurity. Currently, I am a Python/Full-Stack Developer at
-                Optum, where I design and implement innovative software solutions using Vue, PostgreSQL, and Python.
-            </p>
-            <p>
-                I hold a Bachelor of Science in Computer Science from University College Dublin, where I specialized in
-                data science and web programming. My academic journey has been enriched by a variety of specialized
-                courses, including front-end development, data analysis in Python, and advanced training in Microsoft
-                tools.
-                Additionally, my certifications in CISCO CNNA and IT essentials have equipped me with robust knowledge
-                in network infrastructure and cybersecurity.
-            </p>
-            <p>
-                My professional experience spans across roles at STXNEXT and Pressly.pl, where I focused on Python
-                development, REST APIs, and e-commerce website management. Notably, I led the award-winning Recycle.it
-                project, which developed a smartphone-based recycling solution recognized for its innovative approach.
-            </p>
-            <p>
-                Beyond my technical skills, I am deeply committed to teaching and sharing knowledge, evidenced by my
-                contributions to the Polish newspaper “IT Professional” and my role in mentoring students for their
-                final exams. I am also an active participant in the AI Formula Student competition, where I work on the
-                design and development of software for autonomous racing cars.
-                <br>
-                My ongoing research focuses on enhancing AI incident data sharing for cybersecurity, aligning closely
-                with my aspiration to pursue a part-time PhD in AI governance and data protection. Driven by curiosity
-                and a commitment to innovation, I am dedicated to making significant contributions to the field of
-                computer science.
-            </p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Skills</h2>
-            <div class="row">
-                <div class="col-md-3">
-                    <h4>Programming Languages</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">Python</li>
-                        <li class="list-group-item">JavaScript and typescript</li>
-                        <li class="list-group-item">HTML/CSS</li>
-                        <li class="list-group-item">SQL</li>
-                        <li class="list-group-item">Basics of Java</li>
-                        <li class="list-group-item">Basics of C</li>
-
-                    </ul>
+            <div class="hero-content">
+                <img src="images/profile.jpg" alt="Marcel Kamiński" class="hero-avatar">
+                <h1 class="hero-name">Marcel Kamiński</h1>
+                <p class="hero-tagline">Full-Stack Developer · <span class="highlight">AI Solutions</span> for Gaming & Life Sciences</p>
+                <p class="hero-description">
+                    6+ years building scalable, cloud-based systems across healthcare, gaming, banking and product development.
+                    Leveraging Python and JavaScript to deliver high-impact solutions that drive real business value.
+                </p>
+                <div class="hero-badges">
+                    <span class="hero-badge"><i class="fa-brands fa-python"></i> Python</span>
+                    <span class="hero-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+                    <span class="hero-badge"><i class="fa-brands fa-react"></i> React</span>
+                    <span class="hero-badge"><i class="fa-brands fa-aws"></i> AWS</span>
+                    <span class="hero-badge"><i class="fa-brands fa-google"></i> GCP</span>
+                    <span class="hero-badge"><i class="fa-brands fa-docker"></i> Docker</span>
+                    <span class="hero-badge"><i class="fa-solid fa-brain"></i> AI / ML</span>
                 </div>
-                <div class="col-md-3">
-                    <h4>Python frameworks</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">Django</li>
-                        <li class="list-group-item">Flask</li>
-                        <li class="list-group-item">Fast-api</li>
-                        <li class="list-group-item">NumPy and Pandas</li>
-                        <li class="list-group-item">SQLAlchemy</li>
-                        <li class="list-group-item">Celery</li>
-                        <li class="list-group-item">Selenium</li>
-                        <li class="list-group-item">Basics of Scikit-learn, TensorFlow, Keras etc</li>
-
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h4>JavaScript frameworks and libraries</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">Vue</li>
-                        <li class="list-group-item">React</li>
-                        <li class="list-group-item">Cypress</li>
-                        <li class="list-group-item">JQuery</li>
-                        <li class="list-group-item">Vuetify</li>
-                        <li class="list-group-item">Basics of Flutter</li>
-
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h4>Other tools</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">Advance use of Excel</li>
-                        <li class="list-group-item">Networking</li>
-                        <li class="list-group-item">Basics of Pentesting</li>
-                        <li class="list-group-item">Basics of Electronics</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Experience</h2>
-            <div class="timeline">
-                <!-- Timeline item -->
-                <div class="timeline-item">
-                    <h4>Python/Full-Stack Developer - Optum - UnitedHealth Group</h4>
-                    <p>July 2022 - Present</p>
-                    <p>Designs and creates software solutions in VUE, PostgreSQL, and Python, primarily using Flask.
-                        Conducted database operations, built end-to-end automation using Selenium and Cypress, and
-                        managed GitHub actions.</p>
-                </div>
-                <!-- Timeline item -->
-                <div class="timeline-item">
-                    <h4>Python Developer - STXNEXT</h4>
-                    <p>April 2021 - July 2022</p>
-                    <p>Designing and creating software solutions in Python using Django, Flask, REST frameworks,
-                        ElasticSearch, and PostgreSQL. Involved in global database operations, unit test development,
-                        code reviews, and Docker configurations.</p>
-                </div>
-                <!-- Timeline item -->
-                <div class="timeline-item">
-                    <h4>Software Developer/Web Engineer - Pressly.pl</h4>
-                    <p>December 2020 - April 2021</p>
-                    <p>Designed and created software solutions, mainly in web programming (JavaScript, jQuery, HTML,
-                        CSS).
-                        Developed REST API and system integration for e-commerce website management.</p>
-                </div>
-                <!-- Timeline item -->
-                <div class="timeline-item">
-                    <h4>Freelance Python Developer</h4>
-                    <p>September 2019 - Present</p>
-                    <p>Engaged in various freelance projects focusing on Python development, primarily using Django and
-                        Flask frameworks. Delivered custom software solutions, built and integrated REST APIs, and
-                        provided system automation and optimization for diverse clients.</p>
-                </div>
-                <!-- Timeline item -->
-                <div class="timeline-item">
-                    <h4>IT Help Desk Engineer (Intern) - Microsoft Poland</h4>
-                    <p>November 2018 - December 2018</p>
-                    <p>Conducted hardware repairs and received professional training in Microsoft tools such as Power BI
-                        and Azure. Contributed to creating a presentation for Microsoft Poland about cloud solutions
-                        offered by the company.</p>
-                </div>
-                <hr>
-                <!-- Timeline item -->
-                <div class="timeline-item">
-                    <h4>AI Formula Student Team Member - AI Formula Student</h4>
-                    <p>2023 Season</p>
-                    <p>Responsible for the design and development of software for the autonomous racing car, managing
-                        the Microcontroller Unit and communication systems.</p>
-                </div>
-                <!-- Timeline item -->
-                <div class="timeline-item">
-                    <h4>Project Leader - Recycle.it</h4>
-                    <p>2019</p>
-                    <p>Led a team to develop a smartphone-based recycling solution that enhanced recycling efficiency.
-                        The project was awarded the Orange Foundation IMake4MyCity prize for its innovative approach.
-                    </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary-custom"><i class="fa-solid fa-envelope"></i> Get in Touch</a>
+                    <a href="https://www.linkedin.com/in/marcel-kaminski/" target="_blank" rel="noopener" class="btn-outline-custom"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="py-5 bg-light">
+    <!-- About -->
+    <section id="about" class="section-alt">
         <div class="container">
-            <h2 class="text-center mb-4">Education</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>University College Dublin</h4>
-                    <p>Bachelor of Science in Computer Science, specializing in Data Science, Web Programming, and
-                        Python</p>
-                    <p>During my time at UCD, I engaged in numerous projects and research initiatives that deepened my
-                        understanding of AI, cybersecurity, and data analytics. My coursework included advanced topics
-                        in machine learning, data visualization, and algorithm design, equipping me with a strong
-                        technical foundation and problem-solving skills.</p>
-                </div>
-                <div class="col-md-6">
-                    <h4>Technical High School in Poland</h4>
-                    <p>Comprehensive foundation in computer science and related technologies.</p>
-                    <p>At Technical High School, I developed a robust understanding of IT principles, including network
-                        infrastructure, software development, and cybersecurity. This education was complemented by
-                        certifications such as the CISCO CNNA and IT Essentials, providing a strong base for my further
-                        studies and professional career.</p>
-                </div>
+            <div class="text-center mb-5 reveal">
+                <span class="section-label"><i class="fa-solid fa-circle"></i> About Me</span>
+                <h2 class="section-title">Who I Am</h2>
             </div>
-            <div class="row mt-4">
-                <div class="col-md-12">
-                    <h4>Future Potential Part-Time PhD Position</h4>
-                    <p>I am planning to pursue a part-time PhD position, focusing on AI governance and data protection.
-                        This position will allow me to delve deeper into my research interests, particularly in
-                        automating AI threat intelligence and enhancing data-sharing protocols in cybersecurity. My goal
-                        is to contribute to the academic community while continuing to apply my skills in real-world
-                        projects.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="about-text reveal">
+                        <p>
+                            I'm a <strong>Full-Stack Developer</strong> with over six years of professional experience,
+                            specializing in backend <strong>Python</strong> and frontend <strong>JavaScript</strong> technologies.
+                            I design and build scalable, cloud-based systems using containerization, modern database tools
+                            and CI/CD pipelines. My work spans multiple industries - from <strong>healthcare and pharmaceutical AI</strong>
+                            to <strong>mobile gaming</strong>, banking and product development.
+                        </p>
+                        <p>
+                            Currently I work as a contract Full-Stack Developer at <strong>Holisticon Connect</strong>, where I build
+                            software solutions for a global medical company - developing Django-based backend services and
+                            React frontends with schema-driven UIs for data-intensive pharmaceutical workflows. I also
+                            presented on <strong>data validation for GenAI in the pharma sector</strong> at the AI & Life Sciences Meetup in Stockholm.
+                        </p>
+                        <p>
+                            In parallel, I collaborate with <strong>Fun Crafters</strong>, a game development studio in Kraków, where I design
+                            interactive web applications and AI-powered tools for the gaming industry - building modular UIs,
+                            real-time features and optimized data-driven experiences for mid-core RPGs.
+                        </p>
+                        <p>
+                            I hold a <strong>BSc in Computer Science</strong> from University College Dublin and am currently pursuing a
+                            <strong>Master's in Management</strong> at Kozminski University. I've published research on AI incident management
+                            at the <strong>IEEE Cyber Research Conference</strong> and contributed technical articles to IT Professional newspaper.
+                        </p>
+                    </div>
+                    <div class="about-highlights reveal">
+                        <div class="card-custom highlight-item">
+                            <span class="highlight-number">6+</span>
+                            <span class="highlight-label">Years Experience</span>
+                        </div>
+                        <div class="card-custom highlight-item">
+                            <span class="highlight-number">5+</span>
+                            <span class="highlight-label">Companies</span>
+                        </div>
+                        <div class="card-custom highlight-item">
+                            <span class="highlight-number">4</span>
+                            <span class="highlight-label">Industries</span>
+                        </div>
+                        <div class="card-custom highlight-item">
+                            <span class="highlight-number">IEEE</span>
+                            <span class="highlight-label">Published</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-        <!-- WORKING IN PROGRESS :)  -->
-        <!-- TODO: RWD of projects -->
-        <!-- TODO: Multiple items on carusele -->
-    <!-- Projects Section -->
-    <!-- <section id="projects" class="py-5">
+    <!-- Skills -->
+    <section id="skills" class="">
         <div class="container">
-            <h2 class="text-center mb-4">Projects</h2>
-            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card">
-                            <img src="images/misp-aiaaic.png" class="card-img-top" alt="MISP and AIAAIC pipeline">
-                            <div class="card-body">
-                                <h5 class="card-title">MISP and AIAAIC pipeline</h5>
-                                <p class="card-text">A system based on Malware Information Sharing Platform to process AI incidents.</p>
+            <div class="text-center mb-5 reveal">
+                <span class="section-label"><i class="fa-solid fa-circle"></i> Tech Stack</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">A comprehensive toolkit built across healthcare, gaming and enterprise projects</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Python -->
+                    <div class="skill-category reveal">
+                        <h4 class="skill-category-title"><i class="fa-brands fa-python"></i> Python</h4>
+                        <div class="skill-pills">
+                            <span class="skill-pill highlight-pill">Django</span>
+                            <span class="skill-pill highlight-pill">Flask</span>
+                            <span class="skill-pill highlight-pill">FastAPI</span>
+                            <span class="skill-pill">Celery</span>
+                            <span class="skill-pill">Pydantic</span>
+                            <span class="skill-pill">PySpark</span>
+                            <span class="skill-pill">Pandas</span>
+                            <span class="skill-pill">NumPy</span>
+                            <span class="skill-pill">Matplotlib</span>
+                            <span class="skill-pill">Selenium</span>
+                            <span class="skill-pill">Pytest</span>
+                            <span class="skill-pill">Jinja2</span>
+                            <span class="skill-pill">Pygame</span>
+                            <span class="skill-pill">SQLAlchemy</span>
+                        </div>
+                    </div>
+                    <!-- JavaScript -->
+                    <div class="skill-category reveal">
+                        <h4 class="skill-category-title"><i class="fa-brands fa-js"></i> JavaScript & TypeScript</h4>
+                        <div class="skill-pills">
+                            <span class="skill-pill highlight-pill">React</span>
+                            <span class="skill-pill highlight-pill">Vue.js</span>
+                            <span class="skill-pill highlight-pill">Next.js</span>
+                            <span class="skill-pill highlight-pill">TypeScript</span>
+                            <span class="skill-pill">Tailwind CSS</span>
+                            <span class="skill-pill">Redux</span>
+                            <span class="skill-pill">Vite</span>
+                            <span class="skill-pill">Chart.js</span>
+                            <span class="skill-pill">jQuery</span>
+                            <span class="skill-pill">Bootstrap</span>
+                            <span class="skill-pill">Mantine</span>
+                            <span class="skill-pill">HTML / CSS</span>
+                        </div>
+                    </div>
+                    <!-- AI & ML -->
+                    <div class="skill-category reveal">
+                        <h4 class="skill-category-title"><i class="fa-solid fa-brain"></i> AI & Machine Learning</h4>
+                        <div class="skill-pills">
+                            <span class="skill-pill highlight-pill">OpenAI API</span>
+                            <span class="skill-pill highlight-pill">AI Agents</span>
+                            <span class="skill-pill highlight-pill">Google ADK</span>
+                            <span class="skill-pill">Anthropic SDK</span>
+                            <span class="skill-pill">Google ADK</span>
+                            <span class="skill-pill">Scikit-learn</span>
+                            <span class="skill-pill">RAG Pipelines</span>
+                            <span class="skill-pill">Vector Databases</span>
+                            <span class="skill-pill">Prompt Engineering</span>
+                            <span class="skill-pill">OpenCV</span>
+                            <span class="skill-pill">MLflow</span>
+                            <span class="skill-pill">Vertex AI</span>
+                            <span class="skill-pill">Data Validation</span>
+                        </div>
+                    </div>
+                    <!-- Backend -->
+                    <div class="skill-category reveal">
+                        <h4 class="skill-category-title"><i class="fa-solid fa-server"></i> Backend & Architecture</h4>
+                        <div class="skill-pills">
+                            <span class="skill-pill highlight-pill">REST APIs</span>
+                            <span class="skill-pill">gRPC</span>
+                            <span class="skill-pill">RabbitMQ</span>
+                            <span class="skill-pill">WebSocket</span>
+                            <span class="skill-pill">TDD</span>
+                            <span class="skill-pill">ORM</span>
+                            <span class="skill-pill">OOP</span>
+                            <span class="skill-pill">Async</span>
+                            <span class="skill-pill">JWT</span>
+                            <span class="skill-pill">OAuth2</span>
+                            <span class="skill-pill">API Gateway</span>
+                            <span class="skill-pill">Microservices</span>
+                        </div>
+                    </div>
+                    <!-- Databases -->
+                    <div class="skill-category reveal">
+                        <h4 class="skill-category-title"><i class="fa-solid fa-database"></i> Databases</h4>
+                        <div class="skill-pills">
+                            <span class="skill-pill highlight-pill">PostgreSQL</span>
+                            <span class="skill-pill">MySQL</span>
+                            <span class="skill-pill">MongoDB</span>
+                            <span class="skill-pill">Redis</span>
+                            <span class="skill-pill">ElasticSearch</span>
+                            <span class="skill-pill">GraphQL</span>
+                            <span class="skill-pill">Supabase</span>
+                            <span class="skill-pill">Firebase Realtime DB</span>
+                            <span class="skill-pill">SQLite</span>
+                            <span class="skill-pill">NoSQL</span>
+                        </div>
+                    </div>
+                    <!-- Cloud & DevOps -->
+                    <div class="skill-category reveal">
+                        <h4 class="skill-category-title"><i class="fa-solid fa-cloud"></i> Cloud & DevOps</h4>
+                        <div class="skill-pills">
+                            <span class="skill-pill highlight-pill">AWS</span>
+                            <span class="skill-pill highlight-pill">Google Cloud</span>
+                            <span class="skill-pill highlight-pill">Docker</span>
+                            <span class="skill-pill highlight-pill">Kubernetes</span>
+                            <span class="skill-pill">Terraform</span>
+                            <span class="skill-pill">GitLab CI/CD</span>
+                            <span class="skill-pill">Azure DevOps</span>
+                            <span class="skill-pill">S3</span>
+                            <span class="skill-pill">Cloud Functions</span>
+                            <span class="skill-pill">Nginx</span>
+                            <span class="skill-pill">PM2</span>
+                        </div>
+                    </div>
+                    <!-- Testing -->
+                    <div class="skill-category reveal">
+                        <h4 class="skill-category-title"><i class="fa-solid fa-vial"></i> Testing & Automation</h4>
+                        <div class="skill-pills">
+                            <span class="skill-pill">Selenium</span>
+                            <span class="skill-pill">Cypress</span>
+                            <span class="skill-pill">Playwright</span>
+                            <span class="skill-pill">Robot Framework</span>
+                            <span class="skill-pill">Jest</span>
+                            <span class="skill-pill">GitHub Actions</span>
+                            <span class="skill-pill">Postman</span>
+                        </div>
+                    </div>
+                    <!-- PM & Other -->
+                    <div class="skill-category reveal">
+                        <h4 class="skill-category-title"><i class="fa-solid fa-diagram-project"></i> Project Management & Other</h4>
+                        <div class="skill-pills">
+                            <span class="skill-pill">Scrum</span>
+                            <span class="skill-pill">Kanban</span>
+                            <span class="skill-pill">Jira</span>
+                            <span class="skill-pill">Confluence</span>
+                            <span class="skill-pill">Git</span>
+                            <span class="skill-pill">Kibana</span>
+                            <span class="skill-pill">Webpack</span>
+                            <span class="skill-pill">Makefile</span>
+                            <span class="skill-pill">Technical Writing</span>
+                            <span class="skill-pill">Workshop Facilitation</span>
+                        </div>
+                    </div>
+                    <!-- Basics -->
+                    <div class="skill-category reveal">
+                        <h4 class="skill-category-title"><i class="fa-solid fa-code"></i> Also Worked With</h4>
+                        <div class="skill-pills">
+                            <span class="skill-pill">Flutter</span>
+                            <span class="skill-pill">Java</span>
+                            <span class="skill-pill">Rust</span>
+                            <span class="skill-pill">C#</span>
+                            <span class="skill-pill">Unity</span>
+                            <span class="skill-pill">Bash</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section-alt">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="section-label"><i class="fa-solid fa-circle"></i> Career</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="timeline">
+
+                        <div class="timeline-item reveal">
+                            <div class="company">Holisticon Connect <span style="opacity:0.4; font-weight:400; font-size:0.85rem;">· Nexer Group</span></div>
+                            <div class="role">Contract Full-Stack Developer - Medical / Pharma AI</div>
+                            <div class="period"><i class="fa-regular fa-calendar"></i> February 2025 - Present</div>
+                            <div class="description">
+                                Designing and implementing full-stack software solutions for a global medical company.
+                                Building Django backend services and React frontends with JSONForms for dynamic, schema-driven UIs
+                                that support data-intensive pharmaceutical workflows. Developing RESTful APIs, integrating
+                                third-party services and contributing to AI-powered data validation pipelines for GenAI in pharma.
+                                Delivered a talk on data validation for GenAI at the AI & Life Sciences Meetup in Stockholm.
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">JSONForms</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">REST API</span>
+                                <span class="tech-tag">GenAI</span>
+                                <span class="tech-tag">Scrum</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item reveal">
+                            <div class="company">Fun Crafters <span style="opacity:0.4; font-weight:400; font-size:0.85rem;">· Game Studio, Kraków</span></div>
+                            <div class="role">Contract Full-Stack Developer - Gaming AI & Tools</div>
+                            <div class="period"><i class="fa-regular fa-calendar"></i> September 2024 - Present</div>
+                            <div class="description">
+                                Designing and building interactive web applications and AI-powered tools for the gaming industry.
+                                Developing modular React UI components, integrating real-time features and optimizing frontend
+                                performance with code-splitting and lazy loading. Implementing RESTful APIs with Python backends,
+                                handling authentication flows (OAuth2) and managing Dockerized environments with PostgreSQL.
+                                Collaborating with game designers and artists to translate creative concepts into responsive,
+                                data-driven gaming experiences for mid-core RPGs.
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">OAuth2</span>
+                                <span class="tech-tag">CI/CD</span>
+                                <span class="tech-tag">REST API</span>
+                                <span class="tech-tag">AI Tools</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item reveal">
+                            <div class="company">UnitedHealth Group - Optum</div>
+                            <div class="role">Python / Full-Stack Developer</div>
+                            <div class="period"><i class="fa-regular fa-calendar"></i> July 2022 - October 2024</div>
+                            <div class="description">
+                                Designed and developed software solutions using Flask microservices architecture with Vue.js
+                                frontends. Improved database operations, optimized system performance and developed end-to-end
+                                test automation with Selenium and Cypress. Managed cloud infrastructure and containerization.
+                                Utilized PySpark for large-scale data processing, implementing efficient ETL pipelines and
+                                performing data transformations to support analytics workflows.
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">PySpark</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Selenium</span>
+                                <span class="tech-tag">Cypress</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">ETL</span>
+                                <span class="tech-tag">GitHub Actions</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item reveal">
+                            <div class="company">STXNEXT <span style="opacity:0.4; font-weight:400; font-size:0.85rem;">· Software House</span></div>
+                            <div class="role">Python Developer</div>
+                            <div class="period"><i class="fa-regular fa-calendar"></i> April 2021 - July 2022</div>
+                            <div class="description">
+                                Designed and created software solutions in Python using Django, Flask, REST frameworks,
+                                Jinja2, ElasticSearch, React and PostgreSQL. Conducted global database operations, managed
+                                large datasets, performed unit testing, conducted code reviews and configured Docker environments.
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">ElasticSearch</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">REST</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item reveal">
+                            <div class="company">Pressly.pl</div>
+                            <div class="role">Web Engineer</div>
+                            <div class="period"><i class="fa-regular fa-calendar"></i> December 2020 - April 2021</div>
+                            <div class="description">
+                                Designed and developed software solutions primarily in Python. Created REST APIs, managed
+                                system integrations and worked on e-commerce website development using JavaScript, jQuery,
+                                HTML and CSS.
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">REST API</span>
+                                <span class="tech-tag">jQuery</span>
+                                <span class="tech-tag">E-commerce</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item reveal">
+                            <div class="company">Freelance</div>
+                            <div class="role">Software Developer</div>
+                            <div class="period"><i class="fa-regular fa-calendar"></i> September 2018 - Present</div>
+                            <div class="description">
+                                Delivering contract-based software solutions for diverse clients, focused on building
+                                secure and scalable systems using Python and JavaScript. Projects span web applications,
+                                automation tools and API integrations.
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">AWS</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Research & Side roles -->
+                    <div class="text-center mt-5 mb-4 reveal">
+                        <span class="section-label"><i class="fa-solid fa-circle"></i> Research & Projects</span>
+                    </div>
+
+                    <div class="timeline">
+
+                        <div class="timeline-item reveal">
+                            <div class="company">University College Dublin</div>
+                            <div class="role">Research Collaborator - Cybersecurity & AI</div>
+                            <div class="period"><i class="fa-regular fa-calendar"></i> September 2023 - June 2024</div>
+                            <div class="description">
+                                Conducted research on improving AI incident data sharing using cyber threat intelligence feeds.
+                                Authored the paper "Enhancing AI Incident Data Sharing Using Cyber Threat Intelligence Feeds,"
+                                presented at the IEEE Cyber Research Conference in Ireland.
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag">MISP</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">AI Governance</span>
+                                <span class="tech-tag">IEEE</span>
+                                <span class="tech-tag">Cybersecurity</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item reveal">
+                            <div class="company">AI Formula Student</div>
+                            <div class="role">Team Member - Autonomous Racing</div>
+                            <div class="period"><i class="fa-regular fa-calendar"></i> 2023 Season</div>
+                            <div class="description">
+                                Responsible for the design and development of software for the autonomous racing car,
+                                managing the Microcontroller Unit and communication systems.
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Embedded</span>
+                                <span class="tech-tag">MCU</span>
+                                <span class="tech-tag">Autonomous Systems</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item reveal">
+                            <div class="company">Recycle.it</div>
+                            <div class="role">Project Leader</div>
+                            <div class="period"><i class="fa-regular fa-calendar"></i> 2019</div>
+                            <div class="description">
+                                Led a team to develop a smartphone-based recycling solution that enhanced recycling efficiency.
+                                Awarded the Orange Foundation IMake4MyCity prize for its innovative approach.
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Mobile App</span>
+                                <span class="tech-tag">Team Leadership</span>
+                                <span class="tech-tag">Award Winner</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="section-label"><i class="fa-solid fa-circle"></i> Education</span>
+                <h2 class="section-title">Academic Background</h2>
+            </div>
+            <div class="row justify-content-center g-4">
+                <div class="col-lg-5 reveal">
+                    <div class="card-custom education-card">
+                        <div class="degree">Master's in Management</div>
+                        <div class="school"><i class="fa-solid fa-graduation-cap"></i> Kozminski University</div>
+                        <span class="edu-status">In Progress</span>
+                        <div class="edu-description">
+                            Pursuing a Master's degree in Management, broadening my perspective on business strategy,
+                            leadership and organizational management alongside technical expertise.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 reveal reveal-delay-1">
+                    <div class="card-custom education-card">
+                        <div class="degree">Honours BSc in Computer Science</div>
+                        <div class="school"><i class="fa-solid fa-graduation-cap"></i> University College Dublin</div>
+                        <span class="edu-status">Completed</span>
+                        <div class="edu-description">
+                            Specializing in Data Science, Web Programming and Python. Engaged in numerous projects
+                            and research initiatives deepening understanding of AI, cybersecurity and data analytics.
+                            Coursework included machine learning, data visualization and algorithm design.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications & Research -->
+    <section id="publications" class="section-alt">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="section-label"><i class="fa-solid fa-circle"></i> Publications</span>
+                <h2 class="section-title">Research & Articles</h2>
+                <p class="section-subtitle">Conference papers, industry talks and technical articles</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="card-custom pub-card">
+                        <div class="pub-type">IEEE Conference Paper</div>
+                        <div class="pub-title">Enhancing AI Incident Data Sharing Using Cyber Threat Intelligence Feeds</div>
+                        <div class="pub-description">
+                            Research on improving AI incident data sharing through cyber threat intelligence,
+                            integrating AIAAIC data into the MISP platform. Presented at the IEEE Cyber Research
+                            Conference in Ireland.
+                        </div>
+                        <div class="pub-meta"><i class="fa-regular fa-calendar"></i> 2024</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal reveal-delay-1">
+                    <div class="card-custom pub-card">
+                        <div class="pub-type">Industry Talk</div>
+                        <div class="pub-title">Data Validation for GenAI in the Pharmaceutical Sector</div>
+                        <div class="pub-description">
+                            Presented a practical framework for data validation in GenAI pharma applications
+                            at the AI & Life Sciences Meetup in Stockholm, covering governance, ML integration
+                            and validation AI agents.
+                        </div>
+                        <div class="pub-meta"><i class="fa-regular fa-calendar"></i> 2025 · Holisticon Connect</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal reveal-delay-2">
+                    <div class="card-custom pub-card">
+                        <div class="pub-type">Magazine Article</div>
+                        <div class="pub-title">Asynchronous Task Execution in Python Using Celery</div>
+                        <div class="pub-description">
+                            Published in IT Professional newspaper. Introduces Celery as a distributed task queue
+                            system with practical examples for async task execution in Python applications.
+                        </div>
+                        <div class="pub-meta"><i class="fa-regular fa-calendar"></i> October 2021</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="card-custom pub-card">
+                        <div class="pub-type">Magazine Article</div>
+                        <div class="pub-title">Introduction to Working with Terraform</div>
+                        <div class="pub-description">
+                            Published in IT Professional newspaper. Introduces Terraform as an
+                            infrastructure-as-code tool with hands-on guidance for cloud provisioning.
+                        </div>
+                        <div class="pub-meta"><i class="fa-regular fa-calendar"></i> June 2021</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal reveal-delay-1">
+                    <div class="card-custom pub-card">
+                        <div class="pub-type">Magazine Article</div>
+                        <div class="pub-title">Automation of Web Application Tasks and Tests</div>
+                        <div class="pub-description">
+                            Published in IT Professional newspaper. Provides insights into automating
+                            repetitive tasks and end-to-end tests in web applications.
+                        </div>
+                        <div class="pub-meta"><i class="fa-regular fa-calendar"></i> May 2021</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal reveal-delay-2">
+                    <div class="card-custom pub-card">
+                        <div class="pub-type">Undergraduate Research</div>
+                        <div class="pub-title">AI Incident Data Processing for MISP Integration</div>
+                        <div class="pub-description">
+                            Final-year project focused on extracting and processing AI incidents from the
+                            AIAAIC database for integration into MISP, improving AI incident data sharing.
+                        </div>
+                        <div class="pub-meta"><i class="fa-regular fa-calendar"></i> 2024 · UCD</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="section-label"><i class="fa-solid fa-circle"></i> Certifications</span>
+                <h2 class="section-title">Certifications & Training</h2>
+            </div>
+            <div class="cert-grid">
+                <div class="card-custom cert-card reveal">
+                    <div class="cert-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <div>
+                        <div class="cert-name">CISCO CCNA & IT Essentials</div>
+                        <div class="cert-detail">Networking, security and IT infrastructure management. Robust understanding of network protocols and cybersecurity essentials.</div>
+                    </div>
+                </div>
+                <div class="card-custom cert-card reveal">
+                    <div class="cert-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <div>
+                        <div class="cert-name">Data Analysis in Python</div>
+                        <div class="cert-detail">ALX.pl certification. Advanced data analytics, large dataset handling, statistical analysis and data visualization with Python.</div>
+                    </div>
+                </div>
+                <div class="card-custom cert-card reveal">
+                    <div class="cert-icon"><i class="fa-brands fa-microsoft"></i></div>
+                    <div>
+                        <div class="cert-name">Advanced Microsoft Tools Training</div>
+                        <div class="cert-detail">Professional training in Power BI and Azure during internship at Microsoft Poland.</div>
+                    </div>
+                </div>
+                <div class="card-custom cert-card reveal">
+                    <div class="cert-icon"><i class="fa-solid fa-code"></i></div>
+                    <div>
+                        <div class="cert-name">Front-End Development - Akademia 108</div>
+                        <div class="cert-detail">Intensive course covering HTML, CSS, JavaScript and responsive design principles.</div>
+                    </div>
+                </div>
+                <div class="card-custom cert-card reveal">
+                    <div class="cert-icon"><i class="fa-brands fa-google"></i></div>
+                    <div>
+                        <div class="cert-name">Google Code-in 2017</div>
+                        <div class="cert-detail">Global coding contest. Open-source software development and collaboration with the global developer community.</div>
+                    </div>
+                </div>
+                <div class="card-custom cert-card reveal">
+                    <div class="cert-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <div>
+                        <div class="cert-name">Start-Up-Jump - Warsaw City</div>
+                        <div class="cert-detail">Entrepreneurship training covering start-up operations, business creation and the startup ecosystem.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="section-alt">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="section-label"><i class="fa-solid fa-circle"></i> Beyond Code</span>
+                <h2 class="section-title">Hobbies & Interests</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-4 col-sm-6 reveal">
+                    <div class="card-custom hobby-card">
+                        <div class="hobby-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <div class="hobby-title">Teaching</div>
+                        <div class="hobby-text">Mentoring students and giving extra lessons in computer science.</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 reveal reveal-delay-1">
+                    <div class="card-custom hobby-card">
+                        <div class="hobby-icon"><i class="fa-solid fa-flask-vial"></i></div>
+                        <div class="hobby-title">Research</div>
+                        <div class="hobby-text">Writing technical articles and conducting research in AI and cybersecurity.</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 reveal reveal-delay-2">
+                    <div class="card-custom hobby-card">
+                        <div class="hobby-icon"><i class="fa-solid fa-car"></i></div>
+                        <div class="hobby-title">AI Cars</div>
+                        <div class="hobby-text">Building software for autonomous racing vehicles and exploring AI-driven systems.</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 reveal reveal-delay-3">
+                    <div class="card-custom hobby-card">
+                        <div class="hobby-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="hobby-title">Cybersecurity</div>
+                        <div class="hobby-text">Exploring security innovations and contributing to safe, secure systems.</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 reveal">
+                    <div class="card-custom hobby-card">
+                        <div class="hobby-icon"><i class="fa-solid fa-person-running"></i></div>
+                        <div class="hobby-title">Triathlon & Gym</div>
+                        <div class="hobby-text">Competing in triathlons and training regularly for both physical and mental resilience.</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 reveal reveal-delay-1">
+                    <div class="card-custom hobby-card">
+                        <div class="hobby-icon"><i class="fa-solid fa-wind"></i></div>
+                        <div class="hobby-title">Water & Wind Sports</div>
+                        <div class="hobby-text">Sailing and windsurfing - combining adventure with skill on the water.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- References -->
+    <section id="references" class="">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="section-label"><i class="fa-solid fa-circle"></i> Testimonials</span>
+                <h2 class="section-title">What Colleagues Say</h2>
+            </div>
+            <div class="reveal">
+                <div id="refCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#refCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#refCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#refCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="ref-card card-custom">
+                                <div class="ref-quote">
+                                    Marcel is an excellent software engineer and team member.
+                                    He excels at picking up new skills and techniques quickly and applying them.
+                                    He can work as an individual or collaboratively and I can highly recommend him for any software engineering role.
+                                    We worked extremely well together and he has excellent Python, CI/CD, Cloud, Vue skills.
+                                </div>
+                                <div class="ref-author">John Harkin</div>
+                                <div class="ref-role">Principal Software Engineer - Optum</div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ref-card card-custom">
+                                <div class="ref-quote">
+                                    Marcel is extremely good at dealing with ambiguity, quickly providing working code that can be discussed and iterated upon.
+                                    When given stricter requirements he ensures that the code is well tested to all of the given specs.
+                                    I would highly recommend working with Marcel due to his problem solving, his ability to learn quickly,
+                                    and his clear communication with other engineers and business stakeholders.
+                                </div>
+                                <div class="ref-author">Daniel Wojtak</div>
+                                <div class="ref-role">Full-Stack Lead Developer - UnitedHealth Group</div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ref-card card-custom">
+                                <div class="ref-quote">
+                                    Working with Marcel Kamiński on the 'Recycle.it' and other smaller projects was a fantastic experience.
+                                    His expertise in Python and web development was key to our success.
+                                    Marcel's innovative solutions and leadership were invaluable. Highly recommended.
+                                </div>
+                                <div class="ref-author">Adrian Jobda</div>
+                                <div class="ref-role">Full-Stack Developer - BMCG</div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <img src="images/ai-formula-student.png" class="card-img-top" alt="AI Formula Student">
-                            <div class="card-body">
-                                <h5 class="card-title">AI Formula Student</h5>
-                                <p class="card-text">Designed and developed software for an autonomous racing car for the AI Formula Student competition.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <img src="images/recycle-it.png" class="card-img-top" alt="Recycle.it">
-                            <div class="card-body">
-                                <h5 class="card-title">Recycle.it</h5>
-                                <p class="card-text">Developed a smartphone-based solution to enhance recycling efficiency in Warsaw, awarded by the Orange Foundation.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <img src="images/ai-threat-intelligence.png" class="card-img-top" alt="Automating AI Threat Intelligence">
-                            <div class="card-body">
-                                <h5 class="card-title">Automating AI Threat Intelligence</h5>
-                                <p class="card-text">Research project focused on enhancing AI incident data sharing for cybersecurity, employing advanced data models and machine-readable formats.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card">
-                            <img src="images/ai-data-models.png" class="card-img-top" alt="AI Data Models">
-                            <div class="card-body">
-                                <h5 class="card-title">AI Data Models for MISP</h5>
-                                <p class="card-text">Developed specialized data models for integrating AI incidents into the MISP platform, ensuring efficient categorization, serialization, and analysis.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#refCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#refCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev active-rwd" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next active-rwd" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
-    </section> -->
-    
+    </section>
 
-    <!-- Publications & Research Section -->
-    <section id="publications" class="py-5 bg-light">
+    <!-- Contact -->
+    <section id="contact" class="section-alt">
         <div class="container">
-            <h2 class="text-center mb-4">Publications & Research</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Asynchronous Task Execution in Python Using Celery</h5>
-                            <p class="card-text">Published in October 2021, this article introduces readers to Celery, a
-                                powerful distributed task queue system.</p>
+            <div class="text-center mb-5 reveal">
+                <span class="section-label"><i class="fa-solid fa-circle"></i> Contact</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Looking for a developer? Let's talk about your next project.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 reveal">
+                    <div class="contact-info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <div class="info-label">Email</div>
+                            <div class="info-value"><a href="mailto:kontakt@marcelkaminski.pl">kontakt@marcelkaminski.pl</a></div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Automation of Web Application Tasks and Tests</h5>
-                            <p class="card-text">Published in May 2021, this article provides insights into automating
-                                repetitive tasks and tests in web applications.</p>
+                    <div class="contact-info-item">
+                        <div class="info-icon"><i class="fa-brands fa-linkedin"></i></div>
+                        <div>
+                            <div class="info-label">LinkedIn</div>
+                            <div class="info-value"><a href="https://www.linkedin.com/in/marcel-kaminski/" target="_blank" rel="noopener">Marcel Kamiński</a></div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Introduction to Working with Terraform</h5>
-                            <p class="card-text">Published in June 2021, this article introduces readers to Terraform,
-                                an infrastructure as a code software tool.</p>
+                    <div class="contact-info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <div class="info-label">Location</div>
+                            <div class="info-value">Warsaw, Poland · Dublin, Ireland · Remote</div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Recycle.it</h5>
-                            <p class="card-text">Developed in 2019, this project was recognized for enhancing recycling
-                                efficiency using smartphone technology and won the Orange Foundation IMake4MyCity prize.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Final Undergraduate Project on AI Incident Data Processing</h5>
-                            <p class="card-text">This project focused on extracting and processing AI incidents from the
-                                AIAAIC database for integration into the Malware Information Sharing Platform (MISP),
-                                aiming to improve AI incident data sharing. This project is a first step of my research
-                                in this area.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Advanced Training in Microsoft Tools</h5>
-                            <p class="card-text">During an internship at Microsoft Poland, intensive professional
-                                training in tools like Power BI and Azure expanded proficiency in critical software
-                                applications, enhancing analytical and technical skills.</p>
-                        </div>
+                    <div class="mt-4">
+                        <a href="mailto:kontakt@marcelkaminski.pl" class="btn-primary-custom" style="width:100%; justify-content:center;">
+                            <i class="fa-solid fa-paper-plane"></i> Send Me an Email
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="py-5">
+    <!-- Footer -->
+    <footer>
         <div class="container">
-            <h2 class="text-center mb-4">Certifications</h2>
-            <div class="accordion" id="certificationsAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            CISCO CNNA Certification
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#certificationsAccordion">
-                        <div class="accordion-body">
-                            Achieved the CISCO CNNA certification and IT Essentials, covering the essentials of IT
-                            networking, security, and management, equipping me with a robust understanding of network
-                            infrastructure and cybersecurity essentials.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingSeven">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                            Data Analysis in Python by alx.pl
-                        </button>
-                    </h2>
-                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
-                        data-bs-parent="#certificationsAccordion">
-                        <div class="accordion-body">
-                            Focused on Python's application in data analytics, this course enhanced my capabilities in
-                            handling large datasets, performing statistical analysis, and visualizing data insights.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Advanced Training in Microsoft Tools
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#certificationsAccordion">
-                        <div class="accordion-body">
-                            Completed intensive professional training in advanced Microsoft tools like Power BI and
-                            Azure during my internship at Microsoft Poland, enhancing my analytical skills and technical
-                            expertise.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Front-end Development Course by Akademia 108
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#certificationsAccordion">
-                        <div class="accordion-body">
-                            Completed an intensive course focusing on HTML, CSS, JavaScript, and responsive design
-                            principles, essential for modern web development.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Google Code-in 2017
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                        data-bs-parent="#certificationsAccordion">
-                        <div class="accordion-body">
-                            Participated in this global online contest, enhancing my coding skills and collaboration
-                            techniques with a global developer community through open-source software development.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Fiber Optic Techniques Course
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                        data-bs-parent="#certificationsAccordion">
-                        <div class="accordion-body">
-                            Gained hands-on experience in fiber optic technologies as part of the "Youth Closer to the
-                            Labor Market" project.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingSix">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                            Start-Up-Jump by Warsaw City
-                        </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                        data-bs-parent="#certificationsAccordion">
-                        <div class="accordion-body">
-                            Learned the essentials of start-up operations and creation, equipping me with
-                            entrepreneurial skills and insights into the start-up ecosystem.
-                        </div>
-                    </div>
-                </div>
-
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/marcel-kaminski/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:kontakt@marcelkaminski.pl" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
             </div>
+            <p>&copy; 2025 Marcel Kamiński. Built with passion.</p>
         </div>
-    </section>
+    </footer>
 
-
-    <!-- Hobbies & Interests Section -->
-    <section id="hobbies" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Hobbies & Interests</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Teaching</h5>
-                            <p class="card-text">I love teaching and give extra lessons to students preparing for final
-                                exams in computer science.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Research</h5>
-                            <p class="card-text">I enjoy conducting research and writing articles for Polish computer
-                                science newspapers.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">AI Cars</h5>
-                            <p class="card-text">Working on AI-driven cars combines my interest in cutting-edge
-                                technology and my passion for creating innovative and efficient systems.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Cybersecurity</h5>
-                            <p class="card-text">Exploring cybersecurity innovations allows me to contribute to creating
-                                safe and secure systems, protecting data and privacy.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Triathlon & Gym</h5>
-                            <p class="card-text">Competing in triathlons and regular gym sessions challenge me both
-                                physically and mentally, fostering resilience, determination, and a healthy lifestyle.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Water & Wind Sports</h5>
-                            <p class="card-text">Sailing and windsurfing are passions that combine my love for water and
-                                adventure, offering a perfect blend of skill, thrill, and fitness on the water.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Contact</h2>
-            <form
-            action="https://formspree.io/f/xayrzozw"
-            method="POST"
-          >                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Name" required name="Name">
-                    </div>
-                    <div class="col-md-6">
-                        <input type="email" class="form-control" placeholder="Email" name ="email" required>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <textarea class="form-control" rows="5" placeholder="Message" name="text" required></textarea>
-                </div>
-                <div class="d-grid">
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </div>
-            </form>
-            <div class="mt-4">
-                <p><strong>LinkedIn:</strong> <a
-                        href="https://www.linkedin.com/in/marcel-kami%C5%84ski-6b0761158/">Marcel Kamiński</a></p>
-                <p><strong>Email:</strong> kontakt@marcelkaminski.pl</p>
-                <p><strong>Locations:</strong> Europe / Dublin, Ireland / Warsaw, Poland</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- TODO: add References -->
-    <section id="testimonials" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">References</h2>
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <blockquote class="blockquote text-center">
-                            <p class="mb-0 text-justify">Marcel is an excellent software engineer and team member. 
-                                He excels at picking up new skills and techniques quickly and applying them. 
-                                He can work as an individual or colloboratively and I can highly recommend him for any software engineering role. 
-                                We worked extremely well together and he has excellent python, CI-CD, cloud , Vue skills.</p>
-                            <footer class="blockquote-footer mt-2">John Harkin, <cite
-                                    title="Source Title">Principal Software Engineer - Optum</cite></footer>
-                        </blockquote>
-                    </div>
-                    <div class="carousel-item">
-                        <blockquote class="blockquote text-center">
-                            <p class="mb-0">Marcel is extremely good at dealing with ambiguity, quickly providing working code that can be discussed and iterated upon. 
-                                When given stricter requirements he ensures that the code is well tested to all of the given specs. 
-                                I would highly recommend working with Marcel due to his problem solving, his ability to learn quickly, and his clear communication with other engineers and business stakeholders. </p>
-                            <footer class="blockquote-footer mt-2">Daniel Wojtak, <cite
-                                    title="Source Title">Full-Stack Lead developer - UnitedHealth Group </cite></footer>
-                        </blockquote>
-                    </div>
-                    <!-- 
-                    <div class="carousel-item">
-                        <blockquote class="blockquote text-center">
-                            <p class="mb-0">Working with Marcel was a pleasure. His expertise in web development and
-                                commitment to quality ensured our project was a success.</p>
-                            <footer class="blockquote-footer mt-2">Client Name, <cite
-                                    title="Source Title">Company</cite></footer>
-                        </blockquote>
-                    </div> -->
-                    <div class="carousel-item active">
-                        <blockquote class="blockquote text-center">
-                            <p class="mb-0 text-justify">Working with Marcel Kamiński on the 'Recycle.it' and other smaller projects was a fantastic experience. 
-                                His expertise in Python and web development was key to our success. 
-                                Marcel's innovative solutions and leadership were invaluable. Highly recommended</p>
-                            <footer class="blockquote-footer mt-2">Adrian Jobda,<cite
-                                    title="Source Title">Full-Stack developer - BMCG</cite></footer>
-                        </blockquote>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </section>
-    <!-- TODO: make a Blog -->
-    <!-- Blog Section -->
-
-    <!-- <section id="blog" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Blog</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Technology Trends in 2024</h5>
-                            <p class="card-text">Latest trends in technology and how they are shaping the future.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
-    <!-- Bootstrap JS and dependencies -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+
+    <script>
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const root = document.documentElement;
+
+        function setTheme(dark) {
+            root.setAttribute('data-theme', dark ? 'dark' : 'light');
+            themeIcon.className = dark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+            localStorage.setItem('theme', dark ? 'dark' : 'light');
+        }
+
+        const saved = localStorage.getItem('theme');
+        setTheme(saved ? saved === 'dark' : true);
+
+        themeToggle.addEventListener('click', () => {
+            const isDark = root.getAttribute('data-theme') === 'dark';
+            setTheme(!isDark);
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Scroll reveal
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const top = section.offsetTop - 100;
+                if (window.scrollY >= top) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
-
-
